@@ -1,6 +1,6 @@
 {
   "name": "coccycua",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Coccycua is a wrapper for generic compilation (via Babel) and execution of ES6.",
   "main": "dist/bundle.js",
   "scripts": {
