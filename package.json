@@ -2,9 +2,11 @@
   "name": "coccycua",
   "version": "0.0.1",
   "description": "Coccycua is a wrapper for generic compilation (via Babel) and execution of ES6.",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "lab --transform ./test/setup.js --ignore 'Reflect,core,_babelPolyfill,regeneratorRuntime,__core-js_shared__'"
+    "test": "lab --transform ./test/setup.js --ignore 'Reflect,core,_babelPolyfill,regeneratorRuntime,__core-js_shared__'",
+    "compile": "babel lib/ --out-file dist/bundle.js",
+    "prepublish": "npm run compile"
   },
   "author": "Jeremy Darling <jeremy.darling@gmail.com>",
   "license": "MIT",
